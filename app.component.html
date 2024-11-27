@@ -1,0 +1,10 @@
+<div class="book-list">
+  <div class="book-card" *ngFor="let book of books">
+    <img class="book-card__image" [src]="book.imageUrl" alt="{{ book.title }}" />
+    <h3 class="book-card__title">{{ book.title }}</h3>
+    <p class="book-card__author">by {{ book.author }}</p>
+    <p class="book-card__description">{{ book.description }}</p>
+    <p class="book-card__price">Php{{ book.price }}</p>
+    <button class="book-card__button">Add to Cart</button>
+  </div>
+</div>

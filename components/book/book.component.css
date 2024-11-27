@@ -1,0 +1,72 @@
+/* BEM CSS architecture */
+.book-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns by default for mobile */
+  }
+  
+  /* Tablet view */
+  @media (min-width: 600px) {
+    .book-list {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    }
+  }
+  
+  /* Desktop view */
+  @media (min-width: 1024px) {
+    .book-list {
+      grid-template-columns: repeat(5, 1fr); /* 5 columns for desktops */
+    }
+  }
+  
+  /* BEM styles for book card */
+  .book-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .book-card__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .book-card__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .book-card__author {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .book-card__description {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .book-card__price {
+    font-size: 1rem;
+    color: #2d9cdb;
+    margin-top: 10px;
+  }
+  
+  .book-card__button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .book-card__button:hover {
+    background-color: #45a049;
+  }
+  
